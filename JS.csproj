@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDEF3228-0701-4CAA-A769-95C3235AC4C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JS</RootNamespace>
+    <AssemblyName>JS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\Softwares\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.2.7.1979, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.2.7\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=3.2.0.1979, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.3.2.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStock.Designer.cs">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAddedMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerAddedMessageBox.Designer.cs">
+      <DependentUpon>CustomerAddedMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerData.Designer.cs">
+      <DependentUpon>CustomerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletedLabel.Designer.cs">
+      <DependentUpon>DeletedLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedProductlistRecordMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletedProductlistRecordMessageBox.Designer.cs">
+      <DependentUpon>DeletedProductlistRecordMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedStockRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletedStockRecord.Designer.cs">
+      <DependentUpon>DeletedStockRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePermission.Designer.cs">
+      <DependentUpon>DeletePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN.Designer.cs">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductListAddedMessagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductListAddedMessagebox.Designer.cs">
+      <DependentUpon>ProductListAddedMessagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockAddedMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockAddedMessageBox.Designer.cs">
+      <DependentUpon>StockAddedMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockOrder.Designer.cs">
+      <DependentUpon>StockOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockProductList.Designer.cs">
+      <DependentUpon>StockProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatedMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatedMessageBox.Designer.cs">
+      <DependentUpon>UpdatedMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProductList.Designer.cs">
+      <DependentUpon>UpdateProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProductListMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProductListMessageBox.Designer.cs">
+      <DependentUpon>UpdateProductListMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStock.Designer.cs">
+      <DependentUpon>UpdateStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStockMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStockMessageBox.Designer.cs">
+      <DependentUpon>UpdateStockMessageBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStock.resx">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerAddedMessageBox.resx">
+      <DependentUpon>CustomerAddedMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerData.resx">
+      <DependentUpon>CustomerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletedLabel.resx">
+      <DependentUpon>DeletedLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletedProductlistRecordMessageBox.resx">
+      <DependentUpon>DeletedProductlistRecordMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletedStockRecord.resx">
+      <DependentUpon>DeletedStockRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePermission.resx">
+      <DependentUpon>DeletePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN.resx">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductListAddedMessagebox.resx">
+      <DependentUpon>ProductListAddedMessagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockAddedMessageBox.resx">
+      <DependentUpon>StockAddedMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOrder.resx">
+      <DependentUpon>StockOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockProductList.resx">
+      <DependentUpon>StockProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatedMessageBox.resx">
+      <DependentUpon>UpdatedMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProductList.resx">
+      <DependentUpon>UpdateProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProductListMessageBox.resx">
+      <DependentUpon>UpdateProductListMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStock.resx">
+      <DependentUpon>UpdateStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStockMessageBox.resx">
+      <DependentUpon>UpdateStockMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MZ_white_text_2_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whole_white_MZ_3_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MZ LOGO ALL WELL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\only MZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_ecommerce-08_4707164 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3289576-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jewelry-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jewelry-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floweer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imitation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name MZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artboard_1_copy_5_3x-100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madrion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madrion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4707164-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4707164-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jewelry-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jewelry-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jewelry-100 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5402435-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5402435-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mordim.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo gif.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dummy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\370092-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marison.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5402377-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>
